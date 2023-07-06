@@ -1,0 +1,12 @@
+t=int(input());
+for i in range(t):
+    n=int(input());
+    L=list(map(int,input().split()));
+    D=L[0:(n-1)];
+    count=D.count(1);
+    if count%2==0 and L[-1]==0:
+        print('YES');
+    elif count%2==1 and L[-1]==1:
+        print('YES');
+    else:
+        print('NO');
