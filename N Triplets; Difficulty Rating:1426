@@ -1,0 +1,15 @@
+for _ in range(int(input())):
+    n=int(input())
+    a=1
+    b=-1
+    c=-1
+    i=2
+    while i*i<n:
+        if n%i==0:
+            b=i
+            c=n//i
+        i+=1
+    if a==b or b==c or c==a:
+        print(-1)
+    else:
+        print(a,b,c)
