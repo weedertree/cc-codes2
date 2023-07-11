@@ -1,0 +1,12 @@
+t=int(input())
+for i in range(0,t):
+    n,a=(map(int,input().split()))
+    l=list(map(int,input().split()))
+    x=l[0]
+    for j in range(1,len(l)):
+        x=x|l[j]
+    
+    if(x|a==a):
+        print(a-x)
+    else:
+        print("-1")
